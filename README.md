@@ -42,7 +42,7 @@ This is a [Create React App](https://facebook.github.io/create-react-app/) based
 
 ### Motivation
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
-In addition, TypeScript adopt so much easier into a `babel` + `wbpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
+In addition, TypeScript adopt so much easier into a `babel` + `webpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
 
 So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
 
@@ -122,6 +122,7 @@ Official Docs: https://create-react-app.dev/docs/getting-started#npm-run-build-o
 ![cypress_open](images/cypress_open.gif)
 
 #### Runs Cypress tests from the CLI without the GUI
+
 ```bash
 yarn start # Launch DevServer
 yarn cypress:run
@@ -133,6 +134,14 @@ yarn cypress:run
 yarn start # Launch DevServer
 yarn cypress:open
 ```
+
+When you run or open cypress, also run a [Percy](https://percy.io/).  
+Percy is awesome visual regression testing service.   
+That detect visual diff each page, and then we'll check on web console "is that visual change expected?"   
+
+Cypress and Percy combination is really effective for website/webapp!  
+This projects Percy console is this: https://percy.io/LastStance/React-TypeScript-todo
+
 
 ## Jest
 [Jest](https://jestjs.io/) is all-in-one test-runner built in [Create React App](https://facebook.github.io/create-react-app/) and covers function-level unit testing to component-behavior-level integration testing.  
