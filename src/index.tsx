@@ -22,32 +22,31 @@ export interface AppState {
   todoList: TodoListType
 }
 
-let initialAppState: AppState = {
+const BlankAppState: AppState = {
   todoList: []
 }
 
-// Loading before AppState Data
-const text: string | null = window.localStorage.getItem(
-  LocalStorageKey.APP_STATE
-)
-if (typeof text === 'string') {
-  const Object: AppState = JSON.parse(text)
-  initialAppState = Object
+function LoadingAppStateFromLocalStorage(BlankAppState: AppState): AppState {
+  const stringifiedJSON: string | null = window.localStorage.getItem(
+    LocalStorageKey.APP_STATE
+  )
+  if (typeof stringifiedJSON === 'string') {
+    const Loaded: AppState = JSON.parse(stringifiedJSON)
+    return Loaded
+  }
+
+  return BlankAppState
 }
 
-interface Props {
-  path: Routes
-}
-
-const Controller: React.FC<Props> = ({ path }) => <App path={path} />
+const initialAppState = LoadingAppStateFromLocalStorage(BlankAppState)
 
 ReactDOM.render(
   <ErrorBoundary>
     <Provider appState={initialAppState}>
       <Router>
-        <Controller path="/" />
-        <Controller path="/active" />
-        <Controller path="/completed" />
+        <App path="/" />
+        <App path="/active" />
+        <App path="/completed" />
         <NotFound default />
       </Router>
     </Provider>
