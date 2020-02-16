@@ -65,7 +65,7 @@ npx create-react-app react-typescript-todo-example-2020 --template typescript
 
 ## Stack
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
-- [Create React App](https://facebook.github.io/create-react-app/) [v3.3.1](https://github.com/facebook/create-react-app/releases/tag/v3.3.1)
+- [Create React App](https://facebook.github.io/create-react-app/) [v3.4.0](https://github.com/facebook/create-react-app/blob/master/CHANGELOG.md#340-2020-02-14)
 - [TypeScript(Babel)](https://babeljs.io/docs/en/babel-plugin-transform-typescript)
 - [ReachRouter](https://github.com/reach/router)
 - [emotion](https://github.com/emotion-js/emotion): CSS-in-JS
@@ -115,7 +115,7 @@ cd react-typescript-todo-example-2020
 yarn install # or npm install
 ```
 
-After that you can lunch App with 'yarn start' command. 😎
+After that you can lunch App with `yarn start` command. 😎
 
 ### 📝 Editor
 If you're going to code reading for learn, I recommend you [VScode](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/).  
