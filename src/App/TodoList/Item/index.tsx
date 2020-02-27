@@ -1,22 +1,18 @@
 import React, { useState, createRef, useEffect } from 'react'
-import { Todo } from '../../../index'
+import { AppState, Todo, TodoListType } from '../../../index'
+import { useAppState } from '@laststance/use-app-state'
 import { Container } from './style'
 
 interface Props {
   todo: Todo
-  handleCompleteCheckbox: (id: Todo['id']) => void
-  removeItem: (id: Todo['id']) => void
-  handleTodoTextEdit: (
-    e: React.ChangeEvent<HTMLInputElement>,
-    id: Todo['id']
-  ) => void
 }
 
 interface State {
   onEdit: boolean
 }
 
-const Item: React.FC<Props> = ({ todo, handleCompleteCheckbox, removeItem, handleTodoTextEdit }) => {  /* eslint-disable-line prettier/prettier */
+const Item: React.FC<Props> = ({ todo }) => {
+  const [appState, setAppState] = useAppState<AppState>()
   const editInput = createRef<HTMLInputElement>()
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)
@@ -58,6 +54,43 @@ const Item: React.FC<Props> = ({ todo, handleCompleteCheckbox, removeItem, handl
     }
   }
 
+  const toggleCompleted = (clicked: Todo['id']): void => {
+    const toggled: TodoListType = appState.todoList.map(
+      (t: Todo): Todo => {
+        // change complated status for only clicked item
+        if (t.id === clicked) {
+          return { ...t, completed: !t.completed }
+        } else {
+          return t
+        }
+      }
+    )
+
+    setAppState({ todoList: toggled })
+  }
+
+  const removeItem = (terminate: Todo['id']): void => {
+    const removed: TodoListType = appState.todoList.filter(
+      (t: Todo): boolean => t.id !== terminate
+    )
+
+    setAppState({ todoList: removed })
+  }
+
+  const handleTodoTextEdit = (e: React.ChangeEvent<HTMLInputElement>, onEdit: Todo['id']): void => { /* eslint-disable-line prettier/prettier */
+    const edited = appState.todoList.map(
+      (t: Todo): Todo => {
+        if (t.id === onEdit) {
+          return { ...t, bodyText: e.target.value }
+        } else {
+          return t
+        }
+      }
+    )
+
+    setAppState({ todoList: edited })
+  }
+
   useEffect(() => {
     // For fucus input element when double clicks text label. fix this https://github.com/laststance/react-typescript-todo-example-2020/issues/50
     if (state.onEdit === true && editInput.current !== null)
@@ -72,11 +105,10 @@ const Item: React.FC<Props> = ({ todo, handleCompleteCheckbox, removeItem, handl
             className="toggle"
             type="checkbox"
             checked={todo.completed}
-            onChange={() => handleCompleteCheckbox(todo.id)}
-            data-cy="todo-item-complete-checkbox"
-            data-testid="todo-item-complete-checkbox"
+            onChange={() => toggleCompleted(todo.id)}
+            data-cy="todo-item-complete-check"
+            data-testid="todo-item-complete-check"
           />
-          {/* Actual user seeing the label text on screen */}
           <label
             onDoubleClick={onDoubleClick}
             data-cy="todo-body-text"
