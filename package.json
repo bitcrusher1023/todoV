@@ -25,7 +25,6 @@
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:chrome:headless": "cypress run --browser chrome --headless",
     "cypress:open": "cypress open",
-    "percy": "percy",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
@@ -42,7 +41,7 @@
   },
   "devDependencies": {
     "@percy/cypress": "^2.3.1",
-    "@testing-library/jest-dom": "^5.9.0",
+    "@testing-library/jest-dom": "^5.10.1",
     "@testing-library/react": "^10.4.2",
     "@types/jest": "^26.0.3",
     "@types/node": "^14.0.13",
