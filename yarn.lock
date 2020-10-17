@@ -1930,10 +1930,10 @@
     "@svgr/plugin-svgo" "^4.3.1"
     loader-utils "^1.2.3"
 
-"@testing-library/dom@^7.24.2":
-  version "7.24.3"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.24.3.tgz#dae3071463cf28dc7755b43d9cf2202e34cbb85d"
-  integrity sha512-6eW9fUhEbR423FZvoHRwbWm9RUUByLWGayYFNVvqTnQLYvsNpBS4uEuKH9aqr3trhxFwGVneJUonehL3B1sHJw==
+"@testing-library/dom@^7.26.0":
+  version "7.26.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.26.0.tgz#da4d052dc426a4ccc916303369c6e7552126f680"
+  integrity sha512-fyKFrBbS1IigaE3FV21LyeC7kSGF84lqTlSYdKmGaHuK2eYQ/bXVPM5vAa2wx/AU1iPD6oQHsxy2QQ17q9AMCg==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.10.3"
@@ -1941,6 +1941,7 @@
     aria-query "^4.2.2"
     chalk "^4.1.0"
     dom-accessibility-api "^0.5.1"
+    lz-string "^1.4.4"
     pretty-format "^26.4.2"
 
 "@testing-library/jest-dom@^5.11.4":
@@ -1957,13 +1958,13 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react@^11.0.4":
-  version "11.0.4"
-  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-11.0.4.tgz#c84082bfe1593d8fcd475d46baee024452f31dee"
-  integrity sha512-U0fZO2zxm7M0CB5h1+lh31lbAwMSmDMEMGpMT3BUPJwIjDEKYWOV4dx7lb3x2Ue0Pyt77gmz/VropuJnSz/Iew==
+"@testing-library/react@^11.1.0":
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-11.1.0.tgz#dfb4b3177d05a8ccf156b5fd14a5550e91d7ebe4"
+  integrity sha512-Nfz58jGzW0tgg3irmTB7sa02JLkLnCk+QN3XG6WiaGQYb0Qc4Ok00aujgjdxlIQWZHbb4Zj5ZOIeE9yKFSs4sA==
   dependencies:
     "@babel/runtime" "^7.11.2"
-    "@testing-library/dom" "^7.24.2"
+    "@testing-library/dom" "^7.26.0"
 
 "@types/aria-query@^4.2.0":
   version "4.2.0"
@@ -2084,10 +2085,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.2.tgz#2de1ed6670439387da1c9f549a2ade2b0a799256"
   integrity sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
 
-"@types/node@^14.11.8":
-  version "14.11.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.8.tgz#fe2012f2355e4ce08bca44aeb3abbb21cf88d33f"
-  integrity sha512-KPcKqKm5UKDkaYPTuXSx8wEP7vE9GnuaXIZKijwRYcePpZFDVuy2a57LarFKiORbHOuTOOwYzxVxcUzsh2P2Pw==
+"@types/node@^14.11.10":
+  version "14.11.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.10.tgz#8c102aba13bf5253f35146affbf8b26275069bef"
+  integrity sha512-yV1nWZPlMFpoXyoknm4S56y2nlTAuFYaJuQtYRAOU7xA/FJ9RY0Xm7QOkaYMMmr8ESdHIuUb6oQgR/0+2NqlyA==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -4706,10 +4707,10 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-cypress@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-5.3.0.tgz#91122219ae66ab910058970dbf36619ab0fbde6c"
-  integrity sha512-XgebyqL7Th6/8YenE1ddb7+d4EiCG2Jvg/5c8+HPfFFY/gXnOVhoCVUU3KW8qg3JL7g0B+iJbHd5hxuCqbd1RQ==
+cypress@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-5.4.0.tgz#8833a76e91129add601f823d43c53eb512d162c5"
+  integrity sha512-BJR+u3DRSYMqaBS1a3l1rbh5AkMRHugbxcYYzkl+xYlO6dzcJVE8uAhghzVI/hxijCyBg1iuSe4TRp/g1PUg8Q==
   dependencies:
     "@cypress/listr-verbose-renderer" "^0.4.1"
     "@cypress/request" "^2.88.5"
@@ -8643,6 +8644,11 @@ lru-cache@^5.1.1:
   integrity sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==
   dependencies:
     yallist "^3.0.2"
+
+lz-string@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
+  integrity sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=
 
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
