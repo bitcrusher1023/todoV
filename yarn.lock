@@ -1224,10 +1224,10 @@
   resolved "https://registry.yarnpkg.com/@cypress/mount-utils/-/mount-utils-1.0.2.tgz#afbc4f8c350b7cd86edc5ad0db0cbe1e0181edc8"
   integrity sha512-Fn3fdTiyayHoy8Ol0RSu4MlBH2maQ2ZEXeEVKl/zHHXEQpld5HX3vdNLhK5YLij8cLynA4DxOT/nO9iEnIiOXw==
 
-"@cypress/react@^5.9.3":
-  version "5.9.3"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.9.3.tgz#66577f2e254315daeef1ed8ecd86514845faf78a"
-  integrity sha512-dsjlzicxSO239cOg4XWUIvlyXM2bKMnIps2l3DXU5KM/kpldddGh+KTh2OwwIYfDdWUioi6apBDKl+0Opk+k1A==
+"@cypress/react@^5.9.4":
+  version "5.9.4"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.9.4.tgz#0f4b0a893271270ffc805d03bc2ccb3d4d87c3b2"
+  integrity sha512-uw5/vJZ9IMBRzSalkHIw9eY0G+v1rpadMFQZcXUGDaeZOKvkvGVDJ0OHBa5TCONHEQfyMyKsf5VhkBMBATnj6w==
   dependencies:
     "@cypress/mount-utils" "1.0.2"
     debug "4.3.2"
@@ -2131,10 +2131,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@*", "@types/jest@^27.0.0":
-  version "27.0.0"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.0.0.tgz#f1c28f741371739c7cd0e8edb5ed8e67acfa6c35"
-  integrity sha512-IlpQZVpxufe+3qPaAqEoSPHVSxnJh1cf0BqqWHJeKiAUbwnHdmNzjP3ZCWSZSTbmAGXQPNk9QmM3Bif0pR54rg==
+"@types/jest@*", "@types/jest@^26.0.24":
+  version "26.0.24"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.24.tgz#943d11976b16739185913a1936e0de0c4a7d595a"
+  integrity sha512-E/X5Vib8BWqZNRlDxj9vYXhsDwPYbPINqKF9BsnSoon4RQ0D9moEuLD8txgyypFLH7J4+Lho9Nr/c8H0Fi+17w==
   dependencies:
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
