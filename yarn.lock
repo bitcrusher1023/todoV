@@ -1224,10 +1224,10 @@
   resolved "https://registry.yarnpkg.com/@cypress/mount-utils/-/mount-utils-1.0.2.tgz#afbc4f8c350b7cd86edc5ad0db0cbe1e0181edc8"
   integrity sha512-Fn3fdTiyayHoy8Ol0RSu4MlBH2maQ2ZEXeEVKl/zHHXEQpld5HX3vdNLhK5YLij8cLynA4DxOT/nO9iEnIiOXw==
 
-"@cypress/react@^5.10.2":
-  version "5.10.2"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.10.2.tgz#8a513a06c26e67cec61be644f42dc540e9908fb9"
-  integrity sha512-6fNLDRBW89turfEfb7LqvrP2sAEf1stclPLhDlAbt0dRWgTYIGFvOjR6uE7lPP8tgMUQtLg/EJQIN2CG2ybrIQ==
+"@cypress/react@^5.10.3":
+  version "5.10.3"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.10.3.tgz#7e459cb70d0287d2137305b79772164681b988d3"
+  integrity sha512-E68ws4P6CPFbtIqr98rWimf47E5nY6plWwKpHt98GKadSq/MN+57qego+Z5SA1CaDLk7Pvfdk98oYNzkmj20jA==
   dependencies:
     "@cypress/mount-utils" "1.0.2"
     debug "4.3.2"
@@ -2208,10 +2208,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@^17.0.10":
-  version "17.0.10"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.10.tgz#d6972ec018d23cf22b99597f1289343d99ea9d9d"
-  integrity sha512-8oz3NAUId2z/zQdFI09IMhQPNgIbiP8Lslhv39DIDamr846/0spjZK0vnrMak0iB8EKb9QFTTIdg2Wj2zH5a3g==
+"@types/react-dom@^17.0.11":
+  version "17.0.11"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
+  integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
   dependencies:
     "@types/react" "*"
 
